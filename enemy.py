@@ -13,7 +13,7 @@ fosh_list = []
 enemy_list = []
 
 @app.on_message(filters.command("addfosh") & filters.user(admin_id))
-async def add_fosh(_, message):
+   async def add_fosh(_, message):
     fosh = message.command[1]
     
     if fosh in fosh_list:
